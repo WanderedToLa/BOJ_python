@@ -1,12 +1,3 @@
-# h , m = map(int , input().split())
-
-# if m > 45:
-#     print(h , m - 45)
-# elif h > 0 and m < 45:
-#     print(h -1 , m + 15)
-# else:
-#     print(23 , m + 15)
-
 H, M = map(int, input().split())
 
 if M < 45 :	# 분단위가 45분보다 작을 때 
