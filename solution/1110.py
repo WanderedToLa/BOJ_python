@@ -1,9 +1,13 @@
 n = int(input())
-a = str(n)
-num = 0
-# result = 0
-# cnt = 0
-for i in range(len(n)):
-    num += int(a[i])
+newNum = n
+count = 0
 
-print(num)
+while True:
+    m = newNum // 10
+    l = newNum % 10
+    k = (m + l) % 10
+    newNum = (l * 10) + k
+    count += 1
+    if (newNum == n):
+        break
+print(count)
